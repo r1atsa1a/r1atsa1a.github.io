@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@ body {
 }
 
 #card {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.65);
   border-radius: 18px;
   width: 1000px;
   height: 400px;
@@ -59,17 +59,6 @@ body {
   margin: 12px;
 }
 
-.social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon::after {
-  content: attr(title);
-  color: red;
-}
-
 #right-panel {
   float: right;
   width: 650px;
@@ -87,19 +76,53 @@ body {
 }
 
 #click-page {
-  text-decoration: none;
   text-align: right;
   margin-right: 34px;
 }
 
-@media screen and (max-width: 620px) {
-  #top-panel {
-    flex-direction: column;
-    margin-top: 50px;
-  }
+#card-form {
+  background: rgba(255, 255, 255, 0.65);
+  border: black solid 2px;
+  overflow: visible;
+  border-radius: 18px;
+  width: 95%;
+  height: 95%;
+  font-family: Consolas;
+  flex-direction: column;
+}
 
-  .avatar {
-    width: 50%;
-    max-width: 300px;
-  }
+#table-form {
+  width: 95%;
+  height: 95%;
+  margin: 0 auto;
+  margin-top: 1.25%;
+  border: black solid 2px;
+  border-radius: 18px;
+  font-size: 28px;
+  align-items: center;
+  text-align: center;
+  /* background-color: green; */
+}
+
+#infos {
+  width: 450px;
+  /* background-color: red; */
+}
+
+#pics {
+  width: 300px;
+  height: 350px;
+  margin-right: 25px;
+  /* background-color: blue; */
+}
+
+.hypic {
+  width: 98%;
+  height: 92%;
+  margin-right: 25px;
+  /* margin: 0 auto; */
+  display: flex;
+  object-fit: cover;
+  border: black solid 2px;
+  border-radius: 18px;
 }
